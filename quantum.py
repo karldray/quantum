@@ -6,7 +6,7 @@ __all__ = ["choice", "fail", "assert_"]
 
 FAILCODE = 55
 
-def choice(xs):
+def choice(xs=(False, True)):
     for x in xs:
         pid = os.fork()
         if pid == 0:
