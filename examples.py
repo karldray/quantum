@@ -55,7 +55,7 @@ def solve(board):
 
 def printboard(board):
     for i in range(9):
-        print(*board[9*i:9*(i+1)])
+        print(board[9*i:9*(i+1)])
 
 board = [0] * 81
 solve(board)
